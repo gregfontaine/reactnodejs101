@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors'); // Add this
 const app = express();
 const port = 3000;
 
 app.use(express.json());
+app.use(cors()); // Add this to allow requests from localhost:3001
 
 // Vocabulary data: 10 levels, each with 10 items
 const levels = [
