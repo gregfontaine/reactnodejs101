@@ -1,0 +1,25 @@
+{
+  "name": "reactnodejs101",
+  "version": "1.0.0",
+  "description": "Learning the very basics of React Node.js",
+  "main": "index.js",
+"scripts": {
+  "start": "node server.js",
+  "client": "cd client && npm start",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregfontaine/reactnodejs101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregfontaine/reactnodejs101/issues"
+  },
+  "homepage": "https://github.com/gregfontaine/reactnodejs101#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
