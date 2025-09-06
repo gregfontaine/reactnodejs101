@@ -1,0 +1,6 @@
+button {
+  box-sizing: content-box;
+  min-width: 300px;
+  height: 80px; /* twice the minimum width */
+  font-size: 1.2em; /* doubled font size */
+}

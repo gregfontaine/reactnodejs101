@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
+     import './styles.css';
      function App() {
        const [levels, setLevels] = useState([]);
        const [currentLevel, setCurrentLevel] = useState(1);
