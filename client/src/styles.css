@@ -1,6 +1,43 @@
+body {
+  background-color: #1a1a1a;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="40" fill="rgba(255,105,180,0.1)" /%3E%3C/svg%3E');
+  background-size: 200px;
+  font-family: 'Special Elite', cursive;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
 button {
   box-sizing: content-box;
   min-width: 300px;
+  height: 80px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: #f04d92;
+  color: #000000;
+  border: 2px solid #3b82f6;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s ease-in-out;
+  box-sizing: content-box;
+  min-width: 300px;
   height: 80px; /* twice the minimum width */
-  font-size: 1.2em; /* doubled font size */
+  font-size: 1.1em; /* doubled font size */
+}
+
+button:hover {
+  background-color: #ec4899;
+  border-color: #2563eb;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }

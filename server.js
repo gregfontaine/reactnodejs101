@@ -29,15 +29,15 @@ const levels = [
     title: 'Numbers / Nombres / 数字',
     items: [
       { italian: 'Uno', french: 'Un', japanese: '一' },
-      { italian: 'Due', french: 'Deux', japanese: '二' },
-      { italian: 'Tre', french: 'Trois', japanese: '三' },
-      { italian: 'Quattro', french: 'Quatre', japanese: '四' },
-      { italian: 'Cinque', french: 'Cinq', japanese: '五' },
-      { italian: 'Sei', french: 'Six', japanese: '六' },
-      { italian: 'Sette', french: 'Sept', japanese: '七' },
-      { italian: 'Otto', french: 'Huit', japanese: '八' },
       { italian: 'Nove', french: 'Neuf', japanese: '九' },
-      { italian: 'Dieci', french: 'Dix', japanese: '十' }
+      { italian: 'Due', french: 'Deux', japanese: '二' },
+      { italian: 'Cinque', french: 'Cinq', japanese: '五' },
+      { italian: 'Sette', french: 'Sept', japanese: '七' },
+      { italian: 'Sei', french: 'Six', japanese: '六' },
+      { italian: 'Otto', french: 'Huit', japanese: '八' },
+      { italian: 'Quattro', french: 'Quatre', japanese: '四' },
+      { italian: 'Dieci', french: 'Dix', japanese: '十' },
+      { italian: 'Tre', french: 'Trois', japanese: '三' }
     ]
   },
   {
