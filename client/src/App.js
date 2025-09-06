@@ -47,12 +47,12 @@ import React, { useEffect, useState, useCallback } from 'react';
        const handleAnswer = (selected) => {
          const item = levels[currentLevel - 1].items[currentQuestion];
          if (selected === item.french || selected === item.japanese) {
-           setMessage('Correct! / Correct ! / 正解！');
+           setMessage('Correct ! / 正解！');
            nextQuestion();
          } else {
            const newLives = lives - 1;
            setLives(newLives);
-           setMessage('Wrong... / Faux... / 間違い...');
+           setMessage('Faux... / 間違い...');
            if (newLives === 0) {
              setGameOver(true);
            } else {
@@ -60,7 +60,6 @@ import React, { useEffect, useState, useCallback } from 'react';
            }
          }
        };
-
        const nextQuestion = () => {
          if (currentQuestion + 1 < 10) {
            setCurrentQuestion(currentQuestion + 1);
@@ -68,9 +67,9 @@ import React, { useEffect, useState, useCallback } from 'react';
            if (currentLevel < 10) {
              setCurrentLevel(currentLevel + 1);
              setCurrentQuestion(0);
-             setMessage('Level complete! / Niveau terminé ! / レベルクリア！');
+             setMessage('Niveau terminé ! / レベルクリア！');
            } else {
-             setMessage('You won the game! / Tu as gagné ! / ゲームクリア！');
+             setMessage('Tu as gagné ! / ゲームクリア！');
            }
          }
        };
@@ -90,8 +89,8 @@ import React, { useEffect, useState, useCallback } from 'react';
        if (gameOver) {
          return (
            <div style={{ textAlign: 'center', fontSize: '24px' }}>
-             <h1>Game Over! / Fin de partie ! / ゲームオーバー！</h1>
-             <p>Try again! / Réessaie ! / もう一度試して！</p>
+             <h1>Game Over!</h1>
+             <p>Réessayer ! / もう一度！</p>
              <button onClick={restartGame}>Restart / Recommencer / リスタート</button>
            </div>
          );
@@ -101,10 +100,10 @@ import React, { useEffect, useState, useCallback } from 'react';
 
        return (
          <div style={{ textAlign: 'center', fontSize: '20px' }}>
-           <h1>Italian Quiz Game / Jeu de quiz italien / イタリア語クイズゲーム</h1>
+           <h1>Jeu de quiz italien</h1>
            <p>Level {currentLevel}: {levels[currentLevel - 1].title}</p>
-           <p>Lives / Vies / 命: {'❤️'.repeat(lives)}</p>
-           <h2>What does "{currentItem.italian}" mean? / Que veut dire "{currentItem.italian}" ? / "{currentItem.italian}" は何を意味しますか？</h2>
+           <p>HP: {'❤️'.repeat(lives)}</p>
+           <h2>{currentItem.italian}</h2>
            {options.map((opt, idx) => (
              <button key={idx} onClick={() => handleAnswer(opt)} style={{ display: 'block', margin: '10px auto' }}>
                {opt}

@@ -1,0 +1,5 @@
+button {
+  min-width: 120px;
+  height: 240px; /* twice the minimum width */
+  font-size: 2em; /* doubled font size */
+}
