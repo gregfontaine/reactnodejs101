@@ -10,7 +10,7 @@ app.use(cors()); // Add this to allow requests from localhost:3001
 const levels = [
   {
     level: 1,
-    title: 'Greetings / Salutations / 挨拶',
+    title: 'Salutations | 挨拶',
     items: [
       { italian: 'Ciao', french: 'Salut', japanese: 'こんにちは' },
       { italian: 'Buongiorno', french: 'Bonjour', japanese: 'おはようございます' },
@@ -26,7 +26,7 @@ const levels = [
   },
   {
     level: 2,
-    title: 'Numbers / Nombres / 数字',
+    title: 'Nombres | 数字',
     items: [
       { italian: 'Uno', french: 'Un', japanese: '一' },
       { italian: 'Nove', french: 'Neuf', japanese: '九' },
@@ -42,7 +42,7 @@ const levels = [
   },
   {
     level: 3,
-    title: 'Colors / Couleurs / 色',
+    title: 'Couleurs | 色',
     items: [
       { italian: 'Rosso', french: 'Rouge', japanese: '赤' },
       { italian: 'Blu', french: 'Bleu', japanese: '青' },
@@ -58,7 +58,7 @@ const levels = [
   },
   {
     level: 4,
-    title: 'Family / Famille / 家族',
+    title: 'Famille | 家族',
     items: [
       { italian: 'Madre', french: 'Mère', japanese: '母' },
       { italian: 'Padre', french: 'Père', japanese: '父' },
@@ -74,7 +74,7 @@ const levels = [
   },
   {
     level: 5,
-    title: 'Basic Verbs / Verbes basiques / 基本動詞',
+    title: 'Verbes basiques | 基本動詞',
     items: [
       { italian: 'Essere', french: 'Être', japanese: 'である' },
       { italian: 'Avere', french: 'Avoir', japanese: '持つ' },
@@ -90,7 +90,7 @@ const levels = [
   },
   {
     level: 6,
-    title: 'Food / Nourriture / 食べ物',
+    title: 'Nourriture | 食べ物',
     items: [
       { italian: 'Pane', french: 'Pain', japanese: 'パン' },
       { italian: 'Acqua', french: 'Eau', japanese: '水' },
@@ -106,7 +106,7 @@ const levels = [
   },
   {
     level: 7,
-    title: 'Animals / Animaux / 動物',
+    title: 'Animaux | 動物',
     items: [
       { italian: 'Cane', french: 'Chien', japanese: '犬' },
       { italian: 'Gatto', french: 'Chat', japanese: '猫' },
@@ -122,7 +122,7 @@ const levels = [
   },
   {
     level: 8,
-    title: 'Body Parts / Parties du corps / 体の部分',
+    title: 'Parties du corps | 体の部分',
     items: [
       { italian: 'Testa', french: 'Tête', japanese: '頭' },
       { italian: 'Occhio', french: 'Œil', japanese: '目' },
@@ -138,7 +138,7 @@ const levels = [
   },
   {
     level: 9,
-    title: 'School Items / Articles scolaires / 学校のもの',
+    title: 'Articles scolaires | 学校のもの',
     items: [
       { italian: 'Scuola', french: 'École', japanese: '学校' },
       { italian: 'Libro', french: 'Livre', japanese: '本' },
@@ -154,7 +154,7 @@ const levels = [
   },
   {
     level: 10,
-    title: 'Simple Phrases / Phrases simples / 簡単なフレーズ',
+    title: 'Phrases simples | 簡単なフレーズ',
     items: [
       { italian: 'Come stai?', french: 'Comment ça va?', japanese: '元気ですか?' },
       { italian: 'Mi chiamo...', french: 'Je m\'appelle...', japanese: '私の名前は...' },
@@ -166,6 +166,38 @@ const levels = [
       { italian: 'Ti amo', french: 'Je t\'aime', japanese: '愛してる' },
       { italian: 'Aiuto', french: 'Aide', japanese: '助け' },
       { italian: 'Felice', french: 'Heureux', japanese: '幸せ' }
+    ]
+  },
+    {
+    level: 11,
+    title: 'Bicycles | 自転車',
+    items: [
+      { italian: 'Ho una bicicletta', french: 'J’ai un vélo', japanese: '自転車を持っています' },
+      { italian: 'Ho comprato una bicicletta', french: 'J’ai acheté un vélo', japanese: '自転車を買いました' },
+      { italian: 'La mia bicicletta è rossa', french: 'Mon vélo est rouge', japanese: '私の自転車は赤です' },
+      { italian: 'Uso la bicicletta ogni giorno', french: 'J’utilise mon vélo tous les jours', japanese: '毎日自転車を使います' },
+      { italian: 'La mia bicicletta è veloce', french: 'Mon vélo est rapide', japanese: '私の自転車は速いです' },
+      { italian: 'Ho due biciclette', french: 'J’ai deux vélos', japanese: '自転車を二台持っています' },
+      { italian: 'Ho venduto la mia bicicletta', french: 'J’ai vendu mon vélo', japanese: '自転車を売りました' },
+      { italian: 'La mia bicicletta è nuova', french: 'Mon vélo est neuf', japanese: '私の自転車は新しいです' },
+      { italian: 'Ho perso la mia bicicletta', french: 'J’ai perdu mon vélo', japanese: '自転車をなくしました' },
+      { italian: 'Ho riparato la mia bicicletta', french: 'J’ai réparé mon vélo', japanese: '自転車を修理しました' }
+    ]
+  },
+  {
+    level: 12,
+    title: 'Notebooks | ノート',
+    items: [
+      { italian: 'Ho un quaderno', french: 'J’ai un cahier', japanese: 'ノートを持っています' },
+      { italian: 'Ho comprato un quaderno', french: 'J’ai acheté un cahier', japanese: 'ノートを買いました' },
+      { italian: 'Il mio quaderno è grande', french: 'Mon cahier est grand', japanese: '私のノートは大きいです' },
+      { italian: 'Scrivo nel mio quaderno ogni giorno', french: 'J’écris dans mon cahier tous les jours', japanese: '毎日ノートに書きます' },
+      { italian: 'Il mio quaderno è pieno', french: 'Mon cahier est plein', japanese: '私のノートは満杯です' },
+      { italian: 'Ho due quaderni', french: 'J’ai deux cahiers', japanese: 'ノートを二冊持っています' },
+      { italian: 'Ho perso il mio quaderno', french: 'J’ai perdu mon cahier', japanese: 'ノートをなくしました' },
+      { italian: 'Il mio quaderno è nuovo', french: 'Mon cahier est neuf', japanese: '私のノートは新しいです' },
+      { italian: 'Ho venduto il mio quaderno', french: 'J’ai vendu mon cahier', japanese: 'ノートを売りました' },
+      { italian: 'Ho rilegato il mio quaderno', french: 'J’ai relié mon cahier', japanese: 'ノートを製本しました' }
     ]
   }
 ];

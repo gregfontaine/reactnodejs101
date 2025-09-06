@@ -79,15 +79,23 @@ function App() {
     if (currentQuestion + 1 < 10) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      if (currentLevel < 10) {
+      if (currentLevel < 12) {
         setCurrentLevel(currentLevel + 1);
         setCurrentQuestion(0);
-        resetLives(); // Reset lives only when starting a new level
+        resetLives();
         setMessage('Niveau terminé ! / レベルクリア！');
       } else {
         setMessage('Tu as gagné ! / ゲームクリア！');
       }
     }
+  };
+
+  const jumpToLevel = (level) => {
+    setCurrentLevel(level);
+    setCurrentQuestion(0);
+    resetLives();
+    setMessage('');
+    setGameOver(false); // Ensure game over is cleared when jumping
   };
 
   const restartGame = () => {
@@ -182,6 +190,18 @@ function App() {
       <p style={{ fontSize: '18px', color: '#d1d5db', marginTop: '20px' }}>
         {message}
       </p>
+      <div className="level-buttons">
+        {Array.from({ length: 12 }, (_, i) => i + 1).map(level => (
+          <button
+            key={level}
+            onClick={() => jumpToLevel(level)}
+            className="level-button"
+            style={{ backgroundColor: currentLevel === level ? '#ec4899' : '#f04d92' }}
+          >
+            {level}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
